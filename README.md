@@ -15,7 +15,7 @@ const tweetImg = require('tweet-img');
 //const imgData = 'binary imgData';
 
 tweetImg.setup('consumerKey', 'consumerSecret', 'token', 'tokenSecret');
-tweetImg.tweet(imgData);
+tweetImg.tweet('image/jpeg', imgData);
 
 ```
 
