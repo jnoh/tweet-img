@@ -30,6 +30,7 @@
   },
   "homepage": "https://github.com/jnoh/tweet-img#readme",
   "devDependencies": {
-    "ava": "^1.4.1"
+    "ava": "^1.4.1",
+    "nock": "^10.0.6"
   }
 }
