@@ -1,6 +1,6 @@
 # tweet-img
 
-> Publish an image to twitter
+> Tweet an image
 
 ## Usage
 ```
