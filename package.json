@@ -1,0 +1,32 @@
+{
+  "name": "tweet-img",
+  "version": "0.1.0",
+  "description": "Publish an image to twitter",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jnoh/tweet-img.git"
+  },
+  "keywords": [
+    "tweet",
+    "twitter",
+    "twitter-api",
+    "client",
+    "image",
+    "publish",
+    "upload-media"
+  ],
+  "author": {
+    "name": "Jeff Noh",
+    "email": "jnoh12388@gmail.com",
+    "url": "jnoh.net"
+  },
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/jnoh/tweet-img/issues"
+  },
+  "homepage": "https://github.com/jnoh/tweet-img#readme"
+}
