@@ -1,7 +1,7 @@
 {
   "name": "tweet-img",
   "version": "0.1.0",
-  "description": "Publish an image to twitter",
+  "description": "Tweet an image",
   "main": "index.js",
   "scripts": {
     "test": "ava"
