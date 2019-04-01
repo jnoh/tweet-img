@@ -2,6 +2,12 @@
 
 > Tweet an image
 
+## Installation
+
+```
+npm install tweet-img
+```
+
 ## Usage
 ```
 const tweetImg = require('tweet-img');

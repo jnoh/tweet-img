@@ -1,8 +1,8 @@
 'use strict';
 
-const request = require('./request')
-    , OauthHeader = require('./oauthHeader')
-    , multipart = require('./multipart');
+const request = require('./lib/request')
+    , OauthHeader = require('./lib/oauthHeader')
+    , multipart = require('./lib/multipart');
 
 let oauthHeader;
 
