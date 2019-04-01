@@ -10,12 +10,13 @@ function setup(consumerKey, consumerSecret, token, tokenSecret) {
   oauthHeader = new OauthHeader(consumerKey, consumerSecret, token, tokenSecret);
 }
 
-
 /** tweet(String, String, ) tweets `imgData` of `imgContentType` with an
  * a `status` message.
  **/
 async function tweet(status, imgContentType, imgData) {
   if (!oauthHeader) throw new Error('Client needs to be configured with setup() before being used');
+  if (!isImage(imgContentType)) throw new Error('img must be a jpeg, png, gif');
+
   const media = await uploadImg(imgContentType, imgData);
   const resp = await tweetImg(status, [media.media_id_string]);
   return resp;
@@ -49,6 +50,10 @@ async function tweetImg(status, mediaIds) {
   const msg = await request.post(endpoint, params, headers);
   return JSON.parse(msg);
 }
+
+function isImage(imageType) {
+  return /image\/(jpeg|gif|png)/i.text(imageType);
+};
 
 module.exports = exports = {
   setup,
