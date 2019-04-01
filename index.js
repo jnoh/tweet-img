@@ -52,7 +52,7 @@ async function tweetImg(status, mediaIds) {
 }
 
 function isImage(imageType) {
-  return /image\/(jpeg|gif|png)/i.text(imageType);
+  return /image\/(jpeg|gif|png)/i.test(imageType);
 };
 
 module.exports = exports = {
